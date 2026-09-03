@@ -1,0 +1,126 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.projects__card {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px 26px 30px;
+}
+
+.projects__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.projects__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  background: var(--glass-strong);
+  color: var(--text);
+}
+
+.projects__track {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.projects__body {
+  flex: 1;
+}
+
+.projects__kind {
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  color: var(--faint);
+}
+
+.projects__name {
+  margin-top: 8px;
+  font-size: clamp(21px, 2.4vw, 27px);
+  letter-spacing: -0.03em;
+}
+
+.projects__description {
+  margin-top: 12px;
+  max-width: 56ch;
+  font-size: 15.5px;
+  line-height: 1.62;
+  color: var(--muted);
+}
+
+.projects__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.projects__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: var(--glass-strong);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.projects__link:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.projects__link svg {
+  transition: transform 0.3s var(--ease);
+}
+
+.projects__link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+@media (min-width: 760px) {
+  .projects__card {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 1040px) {
+  .projects__card {
+    grid-column: span 2;
+  }
+
+  .projects__card--featured {
+    grid-column: span 3;
+    padding: 34px 32px 36px;
+  }
+}

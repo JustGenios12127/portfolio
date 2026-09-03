@@ -1,0 +1,50 @@
+.lang {
+  position: relative;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: var(--glass);
+  box-shadow: var(--inner-hair);
+}
+
+.lang__thumb {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc((100% - 8px) / var(--count));
+  border-radius: var(--r-pill);
+  background: var(--accent);
+  transform: translateX(calc(var(--index) * 100%));
+  transition: transform 0.45s var(--ease);
+}
+
+.lang__btn {
+  position: relative;
+  z-index: 1;
+  min-width: 42px;
+  height: 34px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.35s var(--ease);
+}
+
+.lang__btn:hover {
+  color: var(--text);
+}
+
+.lang__btn--active,
+.lang__btn--active:hover {
+  color: var(--on-accent);
+}

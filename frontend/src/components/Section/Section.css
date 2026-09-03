@@ -1,0 +1,32 @@
+.section {
+  position: relative;
+  padding: clamp(52px, 6vw, 88px) 0;
+  scroll-margin-top: calc(var(--nav-h) + 12px);
+}
+
+.section__head {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: clamp(36px, 5vw, 60px);
+  max-width: 720px;
+}
+
+.section__head--center {
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section__title {
+  font-size: clamp(30px, 4.6vw, 50px);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.section__description {
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 62ch;
+}
