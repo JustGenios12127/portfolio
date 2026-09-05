@@ -40,7 +40,14 @@
   color: var(--muted);
 }
 
-.footer__top {
+.footer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__link {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -55,7 +62,7 @@
   transition: border-color 0.3s var(--ease), color 0.3s var(--ease), transform 0.3s var(--ease);
 }
 
-.footer__top:hover {
+.footer__link:hover {
   border-color: var(--border-strong);
   color: var(--text);
   transform: translateY(-2px);

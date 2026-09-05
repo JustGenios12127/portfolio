@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import {
   Call02Icon,
   Copy01Icon,
+  Github01Icon,
   Location01Icon,
   Mail01Icon,
   Tick02Icon,
@@ -59,6 +60,15 @@ function Contact() {
             <a className="btn btn--ghost" href={`tel:${contacts.phoneHref}`}>
               <HugeiconsIcon icon={Call02Icon} size={18} strokeWidth={1.9} />
               {contacts.phone}
+            </a>
+            <a
+              className="btn btn--ghost"
+              href={contacts.github}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <HugeiconsIcon icon={Github01Icon} size={18} strokeWidth={1.9} />
+              GitHub
             </a>
           </div>
 

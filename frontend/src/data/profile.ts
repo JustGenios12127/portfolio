@@ -48,6 +48,8 @@ export const contacts = {
   email: 'artem.skillpass@gmail.com',
   phone: '+7 747 081 90 33',
   phoneHref: '+77470819033',
+  github: 'https://github.com/JustGenios12127',
+  githubHandle: 'JustGenios12127',
 }
 
 export function gmailComposeUrl(subject: string) {

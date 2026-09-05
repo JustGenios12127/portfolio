@@ -2,6 +2,7 @@ import {
   ArrowDown01Icon,
   Call02Icon,
   Download04Icon,
+  Github01Icon,
   Location01Icon,
   Mail01Icon,
 } from '@hugeicons/core-free-icons'
@@ -79,6 +80,12 @@ function Hero({ track, onTrackChange }: HeroProps) {
             <a href={`tel:${contacts.phoneHref}`}>
               <HugeiconsIcon icon={Call02Icon} size={16} strokeWidth={1.8} />
               {contacts.phone}
+            </a>
+          </li>
+          <li>
+            <a href={contacts.github} target="_blank" rel="noreferrer noopener">
+              <HugeiconsIcon icon={Github01Icon} size={16} strokeWidth={1.8} />
+              {contacts.githubHandle}
             </a>
           </li>
         </ul>

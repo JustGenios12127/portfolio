@@ -1,6 +1,7 @@
-import { ArrowUpRight01Icon } from '@hugeicons/core-free-icons'
+import { ArrowUpRight01Icon, Github01Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import { useTranslation } from 'react-i18next'
+import { contacts } from '../../data/profile'
 import './Footer.css'
 
 function Footer() {
@@ -17,10 +18,21 @@ function Footer() {
           </div>
         </div>
 
-        <a className="footer__top" href="#top">
-          {t('footer.top')}
-          <HugeiconsIcon icon={ArrowUpRight01Icon} size={16} strokeWidth={1.9} />
-        </a>
+        <div className="footer__actions">
+          <a
+            className="footer__link"
+            href={contacts.github}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <HugeiconsIcon icon={Github01Icon} size={16} strokeWidth={1.9} />
+            GitHub
+          </a>
+          <a className="footer__link" href="#top">
+            {t('footer.top')}
+            <HugeiconsIcon icon={ArrowUpRight01Icon} size={16} strokeWidth={1.9} />
+          </a>
+        </div>
       </div>
     </footer>
   )
